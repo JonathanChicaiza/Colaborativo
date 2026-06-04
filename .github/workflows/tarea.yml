@@ -1,0 +1,12 @@
+name: Tarea Colaborativa
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar codigo
+        uses: actions/checkout@v4
+      - name: Mostrar mensaje de exito
+        run: echo "Ejecucion exitosa del flujo de automatizacion."
